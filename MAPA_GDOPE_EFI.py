@@ -381,7 +381,7 @@ def Fator():
     ).add_to(grupo2) 
 
     folium.Marker(
-        location=[-5,101684, -38,907127],
+        location=[-5.101684, -38.907127],
         tooltip="9006487",
          popup='''
                 ETE HERVAL DO SES QUIXADÁ (ETE 
@@ -420,7 +420,7 @@ def Fator():
     ).add_to(grupo3)  
     
     folium.Marker(
-        location=[-4,856106, -37,776537],
+        location=[-4.856106, -37.776537],
         tooltip="9003155",
         popup='''
                 CS-01 DO SI JAGUARUANA
@@ -483,7 +483,7 @@ def Fator():
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)  # Adiciona marcadores ao grupo 1
     folium.Marker(
-        location=[-3,909335, -38,379695],
+        location=[-3.909335, -38.379695],
         tooltip="9001053",
         popup='''
                 ETA AQUIRAZ DO SI AQUIRAZ
@@ -497,7 +497,7 @@ def Fator():
     
     
     folium.Marker(
-        location=[-4,343936, -38,864567],
+        location=[-4.343936, -38.864567],
         tooltip="9004978",
         popup='''
                 EEAT-02 DO SAA BATURITÉ
@@ -510,7 +510,7 @@ def Fator():
     ).add_to(grupo6)  # Adiciona marcadores ao grupo 1
     
     folium.Marker(
-        location=[-7,253806, -39,144806],
+        location=[-7.253806, -39.144806],
         tooltip="264104",
         popup='''
                 ETA MISSÃO VELHA DO SAA MISSÃO 
