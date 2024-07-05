@@ -337,7 +337,7 @@ def Mapa():
     
     st_folium(m, width=725, height=500)
 
-    st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
+    st.write('Desenvolvido por Otavio Viana')
 
 # Função para a página faotr
 def Fator():
@@ -645,7 +645,7 @@ def Fator():
     Draw(export=True).add_to(m)
     # Exibe o mapa no Streamlit
     st_folium(m, width=725, height=500)
-    st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
+    st.write('Desenvolvido por Otavio Viana')
 # Barra de navegação
 with st.sidebar:
     selected = option_menu(
