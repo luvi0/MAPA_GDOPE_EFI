@@ -2,19 +2,17 @@ import streamlit as st
 import folium
 from streamlit_folium import st_folium
 from streamlit_option_menu import option_menu
-from folium.plugins import Draw
+
 
 # Função para exibir o mapa
 def Mapa():   
+    
     st.header('Ultrapassagem de Demanda', divider='red')  
     # Cria o mapa centralizado em uma localização específica
     m = folium.Map(location=(-3.71839, -38.5434))
-    #Draw(export=True).add_to(m)
-
+    
     #! ULTRAPASSADOS
     
-
-
     folium.Marker(
         location=[-7.253806, -39.144806],
         tooltip="264104",
@@ -335,16 +333,16 @@ def Mapa():
         title="Expand me",
         title_cancel="Exit me",
         force_separate_button=True,
-    ).add_to(m)
- 
-    # Exibe o mapa no Streamlit
+    ).add_to(m) 
+    
     st_folium(m, width=725, height=500)
 
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
 
 # Função para a página faotr
 def Fator():
-     
+    
+    from folium.plugins import Draw
     from streamlit_folium import st_folium  
 
     st.header('Fator de Potência', divider='red')  
