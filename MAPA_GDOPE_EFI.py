@@ -9,7 +9,8 @@ def Mapa():
     st.header('Ultrapassagem de Demanda', divider='red')  
     # Cria o mapa centralizado em uma localização específica
     m = folium.Map(location=(-3.71839, -38.5434))
-      
+    Draw(export=True).add_to(m)
+
     #! ULTRAPASSADOS
     
 
@@ -335,11 +336,9 @@ def Mapa():
         title_cancel="Exit me",
         force_separate_button=True,
     ).add_to(m)
-
-    Draw(export=True).add_to(m)
-
+ 
     # Exibe o mapa no Streamlit
-    st_folium(m, width=725)
+    st_folium(m, width=725, height=500)
 
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
 
