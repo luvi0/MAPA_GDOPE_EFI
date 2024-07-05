@@ -2,6 +2,7 @@ import streamlit as st
 import folium
 from streamlit_folium import st_folium
 from streamlit_option_menu import option_menu
+from folium.plugins import Draw
 
 # Função para exibir o mapa
 def Mapa():   
@@ -335,6 +336,8 @@ def Mapa():
         force_separate_button=True,
     ).add_to(m)
 
+    Draw(export=True).add_to(m)
+
     # Exibe o mapa no Streamlit
     st_folium(m, width=725)
 
@@ -645,7 +648,7 @@ def Fator():
         title_cancel="Exit me",
         force_separate_button=True,
     ).add_to(m)
-
+    Draw(export=True).add_to(m)
     # Exibe o mapa no Streamlit
     st_folium(m, width=725, height=500)
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
@@ -653,8 +656,8 @@ def Fator():
 with st.sidebar:
     selected = option_menu(
         menu_title="Menu Principal",
-        options=["Mapa", "Fator"],
-        icons=["map", "list"],
+        options=["Demanda", "Fator"],
+        icons=["map", "map"],
         menu_icon="cast",
         default_index=0,
     )
