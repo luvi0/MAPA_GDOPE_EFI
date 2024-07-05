@@ -623,9 +623,6 @@ def Fator():
         icon=folium.Icon(icon="info-sign", color='gray')
     ).add_to(grupo7)  # Adiciona marcadores ao grupo 1
     
-
-
-
     # Adiciona os grupos ao mapa
     grupo1.add_to(m)
     grupo2.add_to(m)
