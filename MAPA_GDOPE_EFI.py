@@ -9,7 +9,7 @@ def Mapa():
     st.header('Ultrapassagem de Demanda', divider='red')  
     # Cria o mapa centralizado em uma localização específica
     m = folium.Map(location=(-3.71839, -38.5434))
-    Draw(export=True).add_to(m)
+    #Draw(export=True).add_to(m)
 
     #! ULTRAPASSADOS
     
