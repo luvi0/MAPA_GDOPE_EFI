@@ -10,12 +10,36 @@ def Mapa():
     m = folium.Map(location=(-3.71839, -38.5434))
       
     #! ULTRAPASSADOS
+    
+
+
+    folium.Marker(
+        location=[-7.253806, -39.144806],
+        tooltip="264104",
+        popup="ETA MISSÃO VELHA DO SAA MISSÃO",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+    folium.Marker(
+        location=[-4.971008733234479, -39.014706746646276],
+        tooltip="1389773",
+        popup="ETA TAPUIARÁ (SISAR)",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
 
     # Adiciona marcadores ao mapa
     folium.Marker(
         location=[-3.7997058197269378, -40.25621828676672],
         tooltip="1017401",
         popup="ETA - FORQUILHA",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+# Adiciona marcadores ao mapa
+    folium.Marker(
+        location=[-4.227706750853777, -39.191005690499146],
+        tooltip="1725904",
+        popup="CS-01 + ETA CARIDADE DO SAA",
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(m)
 
@@ -30,6 +54,28 @@ def Mapa():
         location=[-3.829556919772068, -38.557312423271],
         tooltip="9003917",
         popup="SEDE ADMINISTRATIVA DA UNMTS",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+
+    folium.Marker(
+        location=[-5.740362527782114, -39.626396523291234],
+        tooltip="1572902",
+        popup="ETA MOMBAÇA / PA-01 / PA-02",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+    folium.Marker(
+        location=[-3.7955546205116084, -39.273129129888524],
+        tooltip="433212",
+        popup="CS-01 + ETA PENTECOSTE DO SAA",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+    folium.Marker(
+        location=[-4.959836232923555, -39.025312987593374],
+        tooltip="9000668",
+        popup="EEAT-02 + EEAT-05 DO SAA QUIXADÁ ",
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(m)
 
@@ -62,6 +108,27 @@ def Mapa():
     ).add_to(m)
 
     folium.Marker(
+        location=[-4.031224815604646, -38.92421612570589],
+        tooltip="9008099",
+        popup="EEAT-02 DO SI ITAPEBUSSU",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+    folium.Marker(
+        location=[-7.253169033126221, -39.33619264519125],
+        tooltip="57655138",
+        popup="RUA JACOBINA DE SOUZA 0 - ETA - FREI",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+    folium.Marker(
+        location=[-4.369645314876368, -38.81055782304524],
+        tooltip="9001831",
+        popup="EEAT-02 DO SI ARACOIABA",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+    folium.Marker(
         location=[-5.613291822298348, -38.76342058218057],
         tooltip="52392974",
         popup="CS-02 DO SAA JAGUARETAMA",
@@ -86,6 +153,13 @@ def Mapa():
         location=[-4.178427290708941, -38.86420648158024],
         tooltip="430035",
         popup="CSB-15 + CSB-19 + ETA PACOTI DO SAA",
+        icon=folium.Icon(icon="info-sign", color='red')
+    ).add_to(m)
+
+    folium.Marker(
+        location=[-6.0467231585912975, -38.46026353035573],
+        tooltip="9007210",
+        popup="ETA PEREIRO DO SAA PEREIRO",
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(m)
 
