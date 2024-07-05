@@ -338,6 +338,7 @@ def Mapa():
     # Exibe o mapa no Streamlit
     st_folium(m, width=725)
 
+    st.write('Desenvolvido por Otavio Viana')
 
 # Função para a página faotr
 def Fator():
@@ -647,7 +648,7 @@ def Fator():
 
     # Exibe o mapa no Streamlit
     st_folium(m, width=725, height=500)
-
+    st.write('Desenvolvido por Otavio Viana')
 # Barra de navegação
 with st.sidebar:
     selected = option_menu(
