@@ -355,7 +355,7 @@ def Fator():
     grupo2 = folium.FeatureGroup(name='UN-BBA') # cor blue
     grupo3 = folium.FeatureGroup(name='UN-BBJ') # cor green
     grupo4 = folium.FeatureGroup(name='UN-BCL') # cor yellow
-    grupo5 = folium.FeatureGroup(name='UN-BML') # cor yellow
+    grupo5 = folium.FeatureGroup(name='UN-BML') # cor darkpurple
     grupo6 = folium.FeatureGroup(name='UN-BMO') # cor orange
     grupo7 = folium.FeatureGroup(name='UN-BSA') # cor gray
     grupo8 = folium.FeatureGroup(name='UN-BSC') # cor black
@@ -533,7 +533,7 @@ def Fator():
                 KWAR MÉDIO: 7,64
                 NOVO FP: 1
                 ''',
-        icon=folium.Icon(icon="info-sign", color='yellow')
+        icon=folium.Icon(icon="info-sign", color='darkpurple')
     ).add_to(grupo5)  # Adiciona marcadores ao grupo 1
     folium.Marker(
         location=[-4.126311530623035, -38.2396788246681],
@@ -545,7 +545,7 @@ def Fator():
                 KWAR MÉDIO: 6,01
                 NOVO FP: 1
                 ''',
-        icon=folium.Icon(icon="info-sign", color='yellow')
+        icon=folium.Icon(icon="info-sign", color='darkpurple')
     ).add_to(grupo5)  
     
     folium.Marker(
@@ -558,7 +558,7 @@ def Fator():
                 KWAR MÉDIO: 24,84
                 NOVO FP: 0,72
                 ''',
-        icon=folium.Icon(icon="info-sign", color='yellow')
+        icon=folium.Icon(icon="info-sign", color='darkpurple')
     ).add_to(grupo5)  
     
     folium.Marker(
@@ -583,7 +583,7 @@ def Fator():
                 KWAR MÉDIO: 
                 NOVO FP: 1
                 ''',
-        icon=folium.Icon(icon="info-sign", color='yellow')
+        icon=folium.Icon(icon="info-sign", color='darkpurple')
     ).add_to(grupo5)  # Adiciona marcadores ao grupo 1
     
     
@@ -702,7 +702,7 @@ def Fator():
                 KWAR MÉDIO: 6,11
                 NOVO FP: 1
                 ''',
-        icon=folium.Icon(icon="info-sign", color='black')
+        icon=folium.Icon(icon="info-sign", color='yellow')
     ).add_to(grupo4)  # Adiciona marcadores ao grupo 1
 
     folium.Marker(
