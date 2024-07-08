@@ -336,7 +336,7 @@ def Mapa():
     ).add_to(m) 
     Draw(export=True).add_to(m)
     st_folium(m, width=725, height=500)
-    st.write('Referência 04/07/2024')
+    st.write('Referência 07/07/2024')
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
 
 # Função para a página faotr
@@ -358,7 +358,7 @@ def Fator():
     grupo5 = folium.FeatureGroup(name='UN-BML') # cor yellow
     grupo6 = folium.FeatureGroup(name='UN-BMO') # cor orange
     grupo7 = folium.FeatureGroup(name='UN-BSA') # cor gray
-    grupo8 = folium.FeatureGroup(name='UN-BSC') # cor gold
+    grupo8 = folium.FeatureGroup(name='UN-BSC') # cor black
 
     # Adiciona marcadores ao grupo 1
     folium.Marker(
@@ -366,13 +366,29 @@ def Fator():
         tooltip="9001739",
         popup='''
             CSB-04 + CSB-05 DO SI ALAGOINHA
-            FP MÉDIO: 0,8668
+            FP MÉDIO: 0,8676
             KWH MÉDIO: 242
-            KWAR MÉDIO: 139,22
-            NOVO FP: 0,88
+            KWAR MÉDIO: 46,05
+            NOVO FP: 0,99
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)
+
+    
+    # Adiciona marcadores ao grupo 1
+    folium.Marker(
+        location=[-5.281617695288665, -40.67139076056312],
+        tooltip="24444213",
+        popup='''
+            CS-02 (EECS-02B) DO SAA CRATEÚS
+            FP MÉDIO: 0,9208
+            KWH MÉDIO: 112
+            KWAR MÉDIO: 
+            NOVO FP: 1
+            ''',
+        icon=folium.Icon(icon="info-sign", color='black')
+    ).add_to(grupo8)
+
 
     # Adiciona mais marcadores ao grupo 2 (exemplo)
     folium.Marker(
@@ -380,10 +396,10 @@ def Fator():
         tooltip="9003497",
         popup='''
             CSB-04 + CSB-05 + CSB-06 + SSD-04 
-            FP MÉDIO: 0,7308
+            FP MÉDIO: 0,7116
             KWH MÉDIO: 68
-            KWAR MÉDIO: 63,51
-            NOVO FP: 0,77
+            KWAR MÉDIO: 
+            NOVO FP: 0,99
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)
@@ -394,10 +410,10 @@ def Fator():
         tooltip="9005483",
         popup='''
             ETA ALAGOINHA DO SI ALAGOINHA
-            FP MÉDIO: 0,8608
+            FP MÉDIO: 0,8984
             KWH MÉDIO: 62
-            KWAR MÉDIO: 36,66
-            NOVO FP: 0,9
+            KWAR MÉDIO: 11,36
+            NOVO FP: 1
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)
@@ -407,10 +423,10 @@ def Fator():
         tooltip="9003496 ",
         popup='''
             ETA-02 - SÃO GONÇALO DO SI CATARINA
-            FP MÉDIO: 0,6344
-            KWH MÉDIO: 52
-            KWAR MÉDIO: 63,36
-            NOVO FP: 0,68
+            FP MÉDIO: 0,6892
+            KWH MÉDIO: 54
+            KWAR MÉDIO: 
+            NOVO FP: 0,99
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)  
@@ -420,10 +436,10 @@ def Fator():
         tooltip="9011109",
         popup='''
             CS-02 + ETA-02 DO SAA ARNEIROZ
-            FP MÉDIO: 0,8316
-            KWH MÉDIO: 20
-            KWAR MÉDIO: 13,36
-            NOVO FP: 0,96
+            FP MÉDIO: 0,6128
+            KWH MÉDIO: 22
+            KWAR MÉDIO: 12,5
+            NOVO FP: 0,97
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)  # Adiciona marcadores ao grupo 1
@@ -434,10 +450,10 @@ def Fator():
         tooltip="1389773",
         popup='''
                 ETA TAPUIARÁ (SISAR)
-                FP MÉDIO: 0,7524
-                KWH MÉDIO: 46
-                KWAR MÉDIO: 40,27
-                NOVO FP: 0,81
+                FP MÉDIO: 0,8968
+                KWH MÉDIO: 48
+                KWAR MÉDIO: 
+                NOVO FP: 0,99
                 ''',
         icon=folium.Icon(icon="info-sign", color='blue')
     ).add_to(grupo2)  # Adiciona marcadores ao grupo 1
@@ -447,10 +463,10 @@ def Fator():
         tooltip="9006255",
         popup='''
                 ETE HERVAL DO SES QUIXADÁ (ETE 
-                FP MÉDIO: 0,9332
-                KWH MÉDIO: 47
-                KWAR MÉDIO: 18,10
-                NOVO FP: 0,98
+                FP MÉDIO: 0,9388
+                KWH MÉDIO: 48
+                KWAR MÉDIO: 3,24
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='blue')
     ).add_to(grupo2) 
@@ -460,10 +476,10 @@ def Fator():
         tooltip="9006487",
          popup='''
                 ETE HERVAL DO SES QUIXADÁ (ETE 
-                FP MÉDIO: 0,8212
-                KWH MÉDIO: 333
-                KWAR MÉDIO: 231,40
-                NOVO FP: 0,83
+                FP MÉDIO: 0,896
+                KWH MÉDIO: 334
+                KWAR MÉDIO: 
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='blue')
     ).add_to(grupo2) 
@@ -486,10 +502,10 @@ def Fator():
         tooltip="9001789",
         popup='''
                 CS-01 + CSB-01 DO SAA RUSSAS 
-                FP MÉDIO: 0,4276
-                KWH MÉDIO: 241
-                KWAR MÉDIO: 509,49
-                NOVO FP: 0,43
+                FP MÉDIO: 0,96
+                KWH MÉDIO: 244
+                KWAR MÉDIO: 
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='green')
     ).add_to(grupo3)  
@@ -499,10 +515,10 @@ def Fator():
         tooltip="9003155",
         popup='''
                 CS-01 DO SI JAGUARUANA
-                FP MÉDIO: 0,836
+                FP MÉDIO: 0,8696
                 KWH MÉDIO: 36
-                KWAR MÉDIO: 23,63
-                NOVO FP: 0,91
+                KWAR MÉDIO: 
+                NOVO FP: 0,98
                 ''',
         icon=folium.Icon(icon="info-sign", color='green')
     ).add_to(grupo3)  
@@ -512,10 +528,10 @@ def Fator():
         tooltip="9010726",
         popup='''
                 CS-01 + CSB-01 DO SI BEBERIBE
-                FP MÉDIO: 0,742
+                FP MÉDIO: 0,7564
                 KWH MÉDIO: 42
-                KWAR MÉDIO: 37,95
-                NOVO FP: 0,81
+                KWAR MÉDIO: 7,64
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='yellow')
     ).add_to(grupo5)  # Adiciona marcadores ao grupo 1
@@ -524,10 +540,10 @@ def Fator():
         tooltip="9000805",
         popup='''
                 ETA-01 - CASCAVEL DO SAA CASCAVEL
-                FP MÉDIO: 0,7744
+                FP MÉDIO: 0,7684
                 KWH MÉDIO: 68
-                KWAR MÉDIO: 55,56
-                NOVO FP: 0,82
+                KWAR MÉDIO: 6,01
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='yellow')
     ).add_to(grupo5)  
@@ -537,10 +553,10 @@ def Fator():
         tooltip="9010758",
         popup='''
                 EEE-01 - ALAMEDA DAS PALMEIRAS
-                FP MÉDIO: 0,6916
+                FP MÉDIO: 0,5912
                 KWH MÉDIO: 18
-                KWAR MÉDIO: 18,80
-                NOVO FP: 0,85
+                KWAR MÉDIO: 24,84
+                NOVO FP: 0,72
                 ''',
         icon=folium.Icon(icon="info-sign", color='yellow')
     ).add_to(grupo5)  
@@ -550,10 +566,10 @@ def Fator():
         tooltip="9006457",
         popup='''
                 ETA-02 - RIVIERA DO SAA TAPERA
-                FP MÉDIO: 0,3252
+                FP MÉDIO: 0,2188
                 KWH MÉDIO: 105
-                KWAR MÉDIO: 305,33
-                NOVO FP: 0,33
+                KWAR MÉDIO: 1,16
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)  # Adiciona marcadores ao grupo 1
@@ -562,10 +578,10 @@ def Fator():
         tooltip="9001053",
         popup='''
                 ETA AQUIRAZ DO SI AQUIRAZ
-                FP MÉDIO: 0,6888
+                FP MÉDIO: -0,1428
                 KWH MÉDIO: 84
-                KWAR MÉDIO: 88,41
-                NOVO FP: 0,72
+                KWAR MÉDIO: 
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='yellow')
     ).add_to(grupo5)  # Adiciona marcadores ao grupo 1
@@ -576,10 +592,10 @@ def Fator():
         tooltip="9004978",
         popup='''
                 EEAT-02 DO SAA BATURITÉ
-                FP MÉDIO: 0,4672
+                FP MÉDIO: -0,182
                 KWH MÉDIO: 101
-                KWAR MÉDIO: 191,14
-                NOVO FP: 0,48
+                KWAR MÉDIO: 13,24
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='orange')
     ).add_to(grupo6)  # Adiciona marcadores ao grupo 1
@@ -589,10 +605,10 @@ def Fator():
         tooltip="264104",
         popup='''
                 ETA MISSÃO VELHA DO SAA MISSÃO 
-                FP MÉDIO: 0,742
+                FP MÉDIO: 0,54
                 KWH MÉDIO: 87
-                KWAR MÉDIO: 78,60
-                NOVO FP: 0,77
+                KWAR MÉDIO: 
+                NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='gray')
     ).add_to(grupo7)  # Adiciona marcadores ao grupo 1
@@ -602,10 +618,10 @@ def Fator():
         tooltip="9009648",
         popup='''
                 ETA BAIXIO DO SI BAIXIO
-                FP MÉDIO: 0,7124
-                KWH MÉDIO: 52
-                KWAR MÉDIO: 51,22
-                NOVO FP: 0,77
+                FP MÉDIO: 
+                KWH MÉDIO: 54
+                KWAR MÉDIO: 1,2
+                NOVO FP: 
                 ''',
         icon=folium.Icon(icon="info-sign", color='gray')
     ).add_to(grupo7)  # Adiciona marcadores ao grupo 1
@@ -622,6 +638,34 @@ def Fator():
                 ''',
         icon=folium.Icon(icon="info-sign", color='gray')
     ).add_to(grupo7)  # Adiciona marcadores ao grupo 1
+
+
+    folium.Marker(
+        location=[-5.320200228821421, -40.31889907121499],
+        tooltip="9006221",
+        popup='''
+                CS-01 DO SAA TAMBORIL
+                FP MÉDIO: 0,7464
+                KWH MÉDIO: 23
+                KWAR MÉDIO: 3,77
+                NOVO FP: 0,99
+                ''',
+        icon=folium.Icon(icon="info-sign", color='black')
+    ).add_to(grupo8)  # Adiciona marcadores ao grupo 1
+
+
+    folium.Marker(
+        location=[-5.320200228821421, -40.31889907121499],
+        tooltip="9009232",
+        popup='''
+                CSB-16 DO SAA INDEPENDÊNCIA
+                FP MÉDIO: 0,4744
+                KWH MÉDIO: 49
+                KWAR MÉDIO: 0,1
+                NOVO FP: 0,99
+                ''',
+        icon=folium.Icon(icon="info-sign", color='black')
+    ).add_to(grupo8)  # Adiciona marcadores ao grupo 1
 
     folium.Marker(
         location=[-6.900540812779592, -39.197704231852825],
@@ -640,10 +684,10 @@ def Fator():
         tooltip="51353772",
         popup='''
                 SSD-08 - SAA C. QUEB + ETE C. QUEB - 
-                FP MÉDIO: 0,5664
+                FP MÉDIO: 0,5452
                 KWH MÉDIO: 30
-                KWAR MÉDIO: 43,65
-                NOVO FP: 0,64
+                KWAR MÉDIO: 1,69
+                NOVO FP: 0,98
                 ''',
         icon=folium.Icon(icon="info-sign", color='green')
     ).add_to(grupo3)  # Adiciona marcadores ao grupo 1
@@ -653,12 +697,12 @@ def Fator():
         tooltip="879191",
         popup='''
                 CS-01 (AÇUDE POÇO VERDE)
-                FP MÉDIO: 0,886
-                KWH MÉDIO: 79
-                KWAR MÉDIO: 41,34
-                NOVO FP: 0,92
+                FP MÉDIO: 0,6116
+                KWH MÉDIO: 78
+                KWAR MÉDIO: 6,11
+                NOVO FP: 1
                 ''',
-        icon=folium.Icon(icon="info-sign", color='gold')
+        icon=folium.Icon(icon="info-sign", color='black')
     ).add_to(grupo4)  # Adiciona marcadores ao grupo 1
 
     folium.Marker(
@@ -673,6 +717,47 @@ def Fator():
                 ''',
         icon=folium.Icon(icon="info-sign", color='gray')
     ).add_to(grupo7)  # Adiciona marcadores ao grupo 1
+
+    folium.Marker(
+        location=[-3.195561080054889, -39.267229772554295],
+        tooltip="9010231",
+        popup='''
+                SSD-01 + SSD-02 + SSD-03 + SSD-04
+                FP MÉDIO: 0,9424
+                KWH MÉDIO: 21
+                KWAR MÉDIO: 0,51
+                NOVO FP: 0,95
+                ''',
+        icon=folium.Icon(icon="info-sign", color='yellow')
+    ).add_to(grupo4)  # Adiciona marcadores ao grupo 1
+ 
+
+    folium.Marker(
+        location=[-4.057075862775062, -39.45523355501355],
+        tooltip="44786393",
+        popup='''
+                CS-02 DO SAA GENERAL SAMPAIO
+                FP MÉDIO: 
+                KWH MÉDIO: 14
+                KWAR MÉDIO: 8,02
+                NOVO FP: 
+                ''',
+        icon=folium.Icon(icon="info-sign", color='yellow')
+    ).add_to(grupo4)  # Adiciona marcadores ao grupo 1
+
+    folium.Marker(
+        location=[-3.4847250042999764, -40.01882742283056],
+        tooltip="52207102",
+        popup='''
+                CS-03 + ETA-02 DO SAA BROTAS
+                FP MÉDIO: 0,5896
+                KWH MÉDIO: 52
+                KWAR MÉDIO: 4,09
+                NOVO FP: 1
+                ''',
+        icon=folium.Icon(icon="info-sign", color='yellow')
+    ).add_to(grupo4)  # Adiciona marcadores ao grupo 1
+
     # Adiciona os grupos ao mapa
     grupo1.add_to(m)
     grupo2.add_to(m)
@@ -695,7 +780,7 @@ def Fator():
     Draw(export=True).add_to(m)
     # Exibe o mapa no Streamlit
     st_folium(m, width=725, height=500)
-    st.write('Referência 04/07/2024')
+    st.write('Referência 07/07/2024')
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
    
 
