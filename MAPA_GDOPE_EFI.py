@@ -562,7 +562,7 @@ def Fator():
     ).add_to(grupo5)  
     
     folium.Marker(
-        location=[-3.7997058197269378, -40.25621828676672],
+        location=[-3.923759296531435, -38.32913481639625],
         tooltip="9006457",
         popup='''
                 ETA-02 - RIVIERA DO SAA TAPERA
@@ -572,7 +572,7 @@ def Fator():
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='red')
-    ).add_to(grupo1)  # Adiciona marcadores ao grupo 1
+    ).add_to(grupo5)  # Adiciona marcadores ao grupo 1
     folium.Marker(
         location=[-3.909335, -38.379695],
         tooltip="9001053",
@@ -627,7 +627,7 @@ def Fator():
     ).add_to(grupo7)  # Adiciona marcadores ao grupo 1
     
     folium.Marker(
-        location=[-3.7997058197269378, -40.25621828676672],
+        location=[-7.084890545877496, -39.67429950342538],
         tooltip="9001778",
         popup='''
                 ETA BAIXIO DO SI BAIXIO
