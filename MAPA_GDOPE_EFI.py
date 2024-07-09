@@ -336,7 +336,7 @@ def Mapa():
     ).add_to(m) 
     Draw(export=True).add_to(m)
     st_folium(m, width=725, height=500)
-    st.write('Referência 07/07/2024')
+    st.write('Referência 08/07/2024')
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
 
 # Função para a página faotr
@@ -366,24 +366,51 @@ def Fator():
         tooltip="9001739",
         popup='''
             CSB-04 + CSB-05 DO SI ALAGOINHA
-            FP MÉDIO: 0,8676
+            FP MÉDIO: 0,8672
             KWH MÉDIO: 242
-            KWAR MÉDIO: 46,05
+            KWAR MÉDIO: 43,86
             NOVO FP: 0,99
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)
-
     
+
+    # Adiciona marcadores ao grupo 1
+    folium.Marker(
+        location=[-4.743882676481315, -40.9233633540918],
+        tooltip="1725914",
+        popup='''
+            SSD-01 DO SAA PORANGA
+            FP MÉDIO: 0,554
+            KWH MÉDIO: 112
+            KWAR MÉDIO: 
+            NOVO FP: 1
+            ''',
+        icon=folium.Icon(icon="info-sign", color='black')
+    ).add_to(grupo8)
+
     # Adiciona marcadores ao grupo 1
     folium.Marker(
         location=[-5.281617695288665, -40.67139076056312],
         tooltip="24444213",
         popup='''
             CS-02 (EECS-02B) DO SAA CRATEÚS
-            FP MÉDIO: 0,9208
+            FP MÉDIO: 0,554
             KWH MÉDIO: 112
             KWAR MÉDIO: 
+            NOVO FP: 1
+            ''',
+        icon=folium.Icon(icon="info-sign", color='black')
+    ).add_to(grupo8)
+        # Adiciona marcadores ao grupo 1
+    folium.Marker(
+        location=[-5.167986142490234, -40.66653494456778],
+        tooltip="9003914",
+        popup='''
+            SEDE ADM. DA UNBSC + ETE 
+            FP MÉDIO: 0,92
+            KWH MÉDIO: 44   
+            KWAR MÉDIO: 3,22
             NOVO FP: 1
             ''',
         icon=folium.Icon(icon="info-sign", color='black')
@@ -396,7 +423,7 @@ def Fator():
         tooltip="9003497",
         popup='''
             CSB-04 + CSB-05 + CSB-06 + SSD-04 
-            FP MÉDIO: 0,7116
+            FP MÉDIO: 0,7224
             KWH MÉDIO: 68
             KWAR MÉDIO: 
             NOVO FP: 0,99
@@ -410,9 +437,9 @@ def Fator():
         tooltip="9005483",
         popup='''
             ETA ALAGOINHA DO SI ALAGOINHA
-            FP MÉDIO: 0,8984
+            FP MÉDIO: 0,98
             KWH MÉDIO: 62
-            KWAR MÉDIO: 11,36
+            KWAR MÉDIO: 11,53
             NOVO FP: 1
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
@@ -423,7 +450,7 @@ def Fator():
         tooltip="9003496 ",
         popup='''
             ETA-02 - SÃO GONÇALO DO SI CATARINA
-            FP MÉDIO: 0,6892
+            FP MÉDIO: 0,6196
             KWH MÉDIO: 54
             KWAR MÉDIO: 
             NOVO FP: 0,99
@@ -436,10 +463,10 @@ def Fator():
         tooltip="9011109",
         popup='''
             CS-02 + ETA-02 DO SAA ARNEIROZ
-            FP MÉDIO: 0,6128
+            FP MÉDIO: 0,682
             KWH MÉDIO: 22
-            KWAR MÉDIO: 12,5
-            NOVO FP: 0,97
+            KWAR MÉDIO: 14,73
+            NOVO FP: 0,95
             ''',
         icon=folium.Icon(icon="info-sign", color='red')
     ).add_to(grupo1)  # Adiciona marcadores ao grupo 1
@@ -450,7 +477,7 @@ def Fator():
         tooltip="1389773",
         popup='''
                 ETA TAPUIARÁ (SISAR)
-                FP MÉDIO: 0,8968
+                FP MÉDIO: 0,8156
                 KWH MÉDIO: 48
                 KWAR MÉDIO: 
                 NOVO FP: 0,99
@@ -465,7 +492,7 @@ def Fator():
                 ETE HERVAL DO SES QUIXADÁ (ETE 
                 FP MÉDIO: 0,9388
                 KWH MÉDIO: 48
-                KWAR MÉDIO: 3,24
+                KWAR MÉDIO: 2,99
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='blue')
@@ -476,7 +503,7 @@ def Fator():
         tooltip="9006487",
          popup='''
                 ETE HERVAL DO SES QUIXADÁ (ETE 
-                FP MÉDIO: 0,896
+                FP MÉDIO: 0,8972
                 KWH MÉDIO: 334
                 KWAR MÉDIO: 
                 NOVO FP: 1
@@ -515,7 +542,7 @@ def Fator():
         tooltip="9003155",
         popup='''
                 CS-01 DO SI JAGUARUANA
-                FP MÉDIO: 0,8696
+                FP MÉDIO: 0,868
                 KWH MÉDIO: 36
                 KWAR MÉDIO: 
                 NOVO FP: 0,98
@@ -528,9 +555,9 @@ def Fator():
         tooltip="9010726",
         popup='''
                 CS-01 + CSB-01 DO SI BEBERIBE
-                FP MÉDIO: 0,7564
+                FP MÉDIO: 0,742
                 KWH MÉDIO: 42
-                KWAR MÉDIO: 7,64
+                KWAR MÉDIO: 8,19
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='darkpurple')
@@ -540,9 +567,9 @@ def Fator():
         tooltip="9000805",
         popup='''
                 ETA-01 - CASCAVEL DO SAA CASCAVEL
-                FP MÉDIO: 0,7684
+                FP MÉDIO: 0,7692
                 KWH MÉDIO: 68
-                KWAR MÉDIO: 6,01
+                KWAR MÉDIO: 5,70
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='darkpurple')
@@ -553,10 +580,10 @@ def Fator():
         tooltip="9010758",
         popup='''
                 EEE-01 - ALAMEDA DAS PALMEIRAS
-                FP MÉDIO: 0,5912
+                FP MÉDIO: 0,6
                 KWH MÉDIO: 18
-                KWAR MÉDIO: 24,84
-                NOVO FP: 0,72
+                KWAR MÉDIO: 49,66
+                NOVO FP: 0,39
                 ''',
         icon=folium.Icon(icon="info-sign", color='darkpurple')
     ).add_to(grupo5)  
@@ -566,9 +593,9 @@ def Fator():
         tooltip="9006457",
         popup='''
                 ETA-02 - RIVIERA DO SAA TAPERA
-                FP MÉDIO: 0,2188
-                KWH MÉDIO: 105
-                KWAR MÉDIO: 1,16
+                FP MÉDIO: 0,2348
+                KWH MÉDIO: 108
+                KWAR MÉDIO:
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='red')
@@ -578,7 +605,7 @@ def Fator():
         tooltip="9001053",
         popup='''
                 ETA AQUIRAZ DO SI AQUIRAZ
-                FP MÉDIO: -0,1428
+                FP MÉDIO: -0,0688
                 KWH MÉDIO: 84
                 KWAR MÉDIO: 
                 NOVO FP: 1
@@ -592,9 +619,9 @@ def Fator():
         tooltip="9004978",
         popup='''
                 EEAT-02 DO SAA BATURITÉ
-                FP MÉDIO: -0,182
+                FP MÉDIO: -0,1532
                 KWH MÉDIO: 101
-                KWAR MÉDIO: 13,24
+                KWAR MÉDIO: 
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='orange')
@@ -605,7 +632,7 @@ def Fator():
         tooltip="264104",
         popup='''
                 ETA MISSÃO VELHA DO SAA MISSÃO 
-                FP MÉDIO: 0,54
+                FP MÉDIO: 0,4888
                 KWH MÉDIO: 87
                 KWAR MÉDIO: 
                 NOVO FP: 1
@@ -645,9 +672,9 @@ def Fator():
         tooltip="9006221",
         popup='''
                 CS-01 DO SAA TAMBORIL
-                FP MÉDIO: 0,7464
+                FP MÉDIO: 0,8192
                 KWH MÉDIO: 23
-                KWAR MÉDIO: 3,77
+                KWAR MÉDIO: 3,96
                 NOVO FP: 0,99
                 ''',
         icon=folium.Icon(icon="info-sign", color='black')
@@ -659,9 +686,9 @@ def Fator():
         tooltip="9009232",
         popup='''
                 CSB-16 DO SAA INDEPENDÊNCIA
-                FP MÉDIO: 0,4744
+                FP MÉDIO: -0,0956
                 KWH MÉDIO: 49
-                KWAR MÉDIO: 0,1
+                KWAR MÉDIO: 0,11
                 NOVO FP: 0,99
                 ''',
         icon=folium.Icon(icon="info-sign", color='black')
@@ -672,10 +699,10 @@ def Fator():
         tooltip="9005925",
         popup='''
                 SSD-09 DO SAA BARBALHA
-                FP MÉDIO: 0,134
+                FP MÉDIO: 0,6764
                 KWH MÉDIO: 50
-                KWAR MÉDIO: 369,77
-                NOVO FP: 0,14
+                KWAR MÉDIO: 89,62
+                NOVO FP: 0,52
                 ''',
         icon=folium.Icon(icon="info-sign", color='gray')
     ).add_to(grupo7)  # Adiciona marcadores ao grupo 1
@@ -684,9 +711,9 @@ def Fator():
         tooltip="51353772",
         popup='''
                 SSD-08 - SAA C. QUEB + ETE C. QUEB - 
-                FP MÉDIO: 0,5452
+                FP MÉDIO: 0,5912
                 KWH MÉDIO: 30
-                KWAR MÉDIO: 1,69
+                KWAR MÉDIO: 1,89
                 NOVO FP: 0,98
                 ''',
         icon=folium.Icon(icon="info-sign", color='green')
@@ -697,9 +724,9 @@ def Fator():
         tooltip="879191",
         popup='''
                 CS-01 (AÇUDE POÇO VERDE)
-                FP MÉDIO: 0,6116
+                FP MÉDIO: 0,5744
                 KWH MÉDIO: 78
-                KWAR MÉDIO: 6,11
+                KWAR MÉDIO: 5,98
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='yellow')
@@ -750,9 +777,9 @@ def Fator():
         tooltip="52207102",
         popup='''
                 CS-03 + ETA-02 DO SAA BROTAS
-                FP MÉDIO: 0,5896
+                FP MÉDIO: 0,8624
                 KWH MÉDIO: 52
-                KWAR MÉDIO: 4,09
+                KWAR MÉDIO: 
                 NOVO FP: 1
                 ''',
         icon=folium.Icon(icon="info-sign", color='yellow')
@@ -780,7 +807,7 @@ def Fator():
     Draw(export=True).add_to(m)
     # Exibe o mapa no Streamlit
     st_folium(m, width=725, height=500)
-    st.write('Referência 07/07/2024')
+    st.write('Referência 08/07/2024')
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
    
 
