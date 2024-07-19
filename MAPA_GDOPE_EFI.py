@@ -336,7 +336,7 @@ def Mapa():
     ).add_to(m) 
     Draw(export=True).add_to(m)
     st_folium(m, width=725, height=500)
-    st.write('Referência 08/07/2024')
+    st.write('Referência 17/07/2024')
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
 
 # Função para a página faotr
@@ -836,7 +836,7 @@ def Fator():
     Draw(export=True).add_to(m)
     # Exibe o mapa no Streamlit
     st_folium(m, width=725, height=500)
-    st.write('Referência 08/07/2024')
+    st.write('Referência 17/07/2024')
     st.write('Gerência de Controle, Desenvolvimento e Eficiência Operacional')
    
 
