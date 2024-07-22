@@ -3,6 +3,13 @@ import folium
 from streamlit_folium import st_folium
 from streamlit_option_menu import option_menu
 
+icon_base64 = "https://img.icons8.com/?size=100&id=9267&format=png&color=8A8A11"  
+
+st.set_page_config(
+    page_icon=icon_base64,
+    layout="centered",  
+    initial_sidebar_state="auto" 
+)
 
 # Função para exibir o mapa
 def Mapa():   
